@@ -9,6 +9,13 @@
         <!-- <exposedThought>SoakingWet</exposedThought> -->
         <exposedThought>BloodCovered</exposedThought>
 
+        <modExtensions>
+            <!-- Class, not class! -->
+            <li Class="RainingBlood.WeatherDefExtension">
+                <exposedThoughtCannibal>BloodCoveredCannibal</exposedThoughtCannibal>
+            </li>
+        </modExtensions>
+
         <!-- Copied from rain -->
         <temperatureRange>0~100</temperatureRange>
         <windSpeedFactor>1.5</windSpeedFactor>

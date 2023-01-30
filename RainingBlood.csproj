@@ -10,9 +10,6 @@
   <PropertyGroup>
     <RootNamespace>RainingBlood</RootNamespace>
     <AssemblyName>RainingBlood</AssemblyName>
-    <!-- You probably want to modify this GUID for your mod, as it's supposed to be unique.
-           This is also referenced in the .sln file.
-             My system has "uuidgen" to generate UUIDs. -->
     <ProjectGuid>{475bfd9c-f844-4984-bdd3-a5640f3035a5}</ProjectGuid>
 
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -36,6 +33,7 @@
     <UseVSHostingProcess>false</UseVSHostingProcess>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
+  
   <!-- Release build -->
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>none</DebugType>
@@ -49,6 +47,8 @@
 
   <!-- Dependencies -->
   <ItemGroup>
+    <PackageReference Include="Lib.Harmony" Version="2.2.2" />
+
     <!-- The main game code (RimWorld and Verse) -->
     <Reference Include="Assembly-CSharp">
       <HintPath>../../RimWorldLinux_Data/Managed/Assembly-CSharp.dll</HintPath>
